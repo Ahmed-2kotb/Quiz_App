@@ -1,0 +1,222 @@
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; 
+}
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    background-color: #ffffff; 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    width: 350px; 
+}
+#quiz {
+    flex: 1;
+    text-align: left; 
+    width: 100%; 
+}
+.options {
+    display: flex;
+    flex-direction: column;
+}
+.option {
+    background-color: #1ccf16;
+    color: rgb(16, 9, 9);
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; 
+    width: 100%; 
+    font-weight: bold;
+}
+.option:hover {
+    background-color: #0056b3; 
+    color: #ffffff; 
+}
+.option:last-child {
+    margin-bottom: 0;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    margin-top: 20px;
+}
+#next-btn {
+    background-color: green; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.nav-btn {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+#prev-btn {
+    background-color: green;
+}
+#result {
+    text-align: center;
+    margin-top: 20px;
+}
+#question-number, #question {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 900;
+    text-align: center;
+}  
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.footer, #result {
+    flex-shrink: 0; 
+}
+.developed {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 2px;
+    width: 100%;
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: #f0f0f0;
+    background-color: #7e927f;
+}
+@media (min-width: 576px) and (max-width: 767px),
+(min-width: 768px) and (max-width: 991px) {
+    .quiz-container {
+        justify-content: flex-start;
+        position: relative;
+        top: 60px;
+    }
+    .developed {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f7;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#quiz, #correct-answers {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#question-number {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#question {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.option {
+    display: block;
+    background-color: #e9ecef;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #d8dee2;
+}
+
+.correct {
+    background-color: #28a745 !important;
+    color: #fff;
+}
+
+.incorrect {
+    background-color: #dc3545 !important;
+    color: #fff;
+}
+
+#timer {
+    font-size: 1.2em;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#prev-btn, #next-btn, #restart-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#prev-btn:hover, #next-btn:hover, #restart-btn:hover {
+    background-color: #0056b3;
+}
+
+#prev-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.3em;
+    color: #17a2b8;
+}
+
+.hide {
+    display: none;
+}
+
+#answers-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#answers-list li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
